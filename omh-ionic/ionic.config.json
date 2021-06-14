@@ -1,0 +1,7 @@
+{
+  "name": "omh-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
