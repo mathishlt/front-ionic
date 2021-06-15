@@ -1,0 +1,24 @@
+<ion-content>
+  <ion-img class="loginIcon" src="./assets/login.svg"></ion-img>
+  <ion-title class="loginTitle">Inscription</ion-title>
+  <ion-card class="loginForm">
+    <ion-card-content>
+      <ion-label class="loginLabel">Nom</ion-label>
+      <ion-input class="loginInput" type="text"></ion-input>
+      <ion-label class="loginLabel">Prénom</ion-label>
+      <ion-input class="loginInput" type="text"></ion-input>
+      <ion-label class="loginLabel">Email</ion-label>
+      <ion-input class="loginInput" type="email"></ion-input>
+      <ion-label class="loginLabel">Mot de passe</ion-label>
+      <ion-input class="loginInput" type="password"></ion-input>
+      <ion-label class="loginLabel">Confirmer le mot de passe</ion-label>
+      <ion-input class="loginInput" type="password"></ion-input>
+      <div class="loginButton">
+        <ion-button color="light" type="submit">S'inscrire</ion-button>
+      </div>
+      <p>Déjà un compte ? <a routerLink="/login" href="">Connectez-vous</a></p>
+    </ion-card-content>
+  </ion-card>
+  <div class="button button1"><ion-button color="warning" class="connectWith"><ion-icon class="logoConnect" name="logo-google"></ion-icon>Connexion avec Google</ion-button></div>
+  <div class="button button2"><ion-button color="dark" class="connectWith"><ion-icon class="logoConnect" name="logo-apple"></ion-icon>Connexion avec Apple</ion-button></div>
+</ion-content>
