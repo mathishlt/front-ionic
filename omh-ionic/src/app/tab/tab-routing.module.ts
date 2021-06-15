@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TabsPage } from './tabs.page';
+import { TabPage } from './tab.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
-    component: TabsPage,
+    path: 'tab',
+    component: TabPage,
     children: [
       {
         path: 'home',
@@ -24,11 +24,19 @@ const routes: Routes = [
           }
         ]
       },
+      {
+        path: 'signup',
+        children: [
+          {
+            path: '', loadChildren: () => import('../signup/signup.module').then( m => m.SignupPageModule),
+          }
+        ]
+      },
     ]
   },
   {
     path: '',
-    redirectTo: 'tabs/home',
+    redirectTo: 'tab/login',
     pathMatch: 'full'
   }
 ];
@@ -37,4 +45,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabPageRoutingModule {}
+
