@@ -32,10 +32,6 @@ ion-content {
   margin: 0 auto 20px auto;
 }
 
-.orLogin {
-  top: 150px;
-}
-
 .button {
   width: 75%;
   margin: 0 auto;
@@ -43,6 +39,10 @@ ion-content {
 
 .button1 {
   margin-top: 100px;
+}
+
+.button2 {
+  padding-bottom: 100px;
 }
 
 .connectWith {
@@ -58,6 +58,6 @@ ion-content {
   text-align: center;
 }
 
-.tabsbar {
-  display: none;
+ion-tab-button {
+  display: none !important;
 }
