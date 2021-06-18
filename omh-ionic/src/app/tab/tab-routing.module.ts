@@ -17,6 +17,14 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'profil',
+        children: [
+          {
+            path: '', loadChildren: () => import('../profil/profil.module').then( m => m.ProfilPageModule),
+          }
+        ]
+      },
+      {
         path: 'login',
         children: [
           {
